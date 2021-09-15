@@ -1,0 +1,66 @@
+.circle-1{
+    position: fixed;
+    z-index: -1000;
+    background-color: darkgray; 
+    top: calc(100vh - 150px);
+    left: -100px;
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+}
+
+.circle-2{
+    position: fixed;
+    z-index: -1000;
+    background-color: darkgray; 
+    top: 00px;
+    left: calc(100vw - 100px);
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+}
+
+.circle-3{
+    position: fixed;
+    z-index: -1000;
+    background-color: darkgray; 
+    top: 170px;
+    left: calc(100vw - 170px);
+    width: 70px; 
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* SLIDES */
+.slide-jobs{
+    
+}
+
+.slide-jobs .card{
+    width: 18rem;
+}
+
+
+@media screen and (max-width: 780px) {
+    .slide-jobs{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .slide-jobs .card{
+        width: 50%;
+        align-items: center;
+    }
+    
+}
+
+
+.btn-prev-next{
+    width: 10%;
+}
+
+.btn-icon-prev-next{
+    filter: invert(0) grayscale(100) !important;
+    border-radius: 50%;
+    background-color: black;
+}
+

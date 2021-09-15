@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Marlison - portfólio</title>
 </head>
 
@@ -60,25 +60,212 @@
     </nav>
 
     <main>
-        <div class="container my-3 py-3 bg-light rounded">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="container my-3 py-3 bg-light rounded" style="min-height: 100vh;">
             <div>
                 <h4 id="home">Home</h4>
-                <p style="height: 200vh;"></p>
-                <h4 id="aboutMyself">Sobre mim</h4>
-                <p style="height: 200vh;"></p>
+                <p></p>
+                <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/asuna-sao-bg-gray.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/asuna-sao-bg-red.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/asuna-sao-bg-yellow.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <h4 id="aboutMyself" class="mt-5">Sobre mim</h4>
+                    <h5>Sou Marlison Soares</h5>
+                    <p>Moro em Jardim de Piranhas, RN - Brasil</p>
+                    <h5>Contato:</h5>
+                    <p>Email: marlisonsoaresjp@gmail.com</p>
+                    <p>Telefone: +55 84 99856-4188</p>
+                
 
-                <h4 id="myJobs">Meus trabalhos</h4>
-                <p style="height: 100vh;"></p>
 
-                <h4 id="scrollspyHeading4">Fourth heading</h4>
-                <p style="height: 100vh;"></p>
-                <h4 id="scrollspyHeading5">Fifth heading</h4>
-                <p style="height: 100vh;"></p>
+
+                <h4 id="myJobs" class="mt-5">Meus trabalhos</h4>
+
+                <div id="jobs" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#jobs" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#jobs" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#jobs" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center my-5 slide-jobs">
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-gray.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto integrador, IFRN - Campus Caicó.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-gray.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-gray.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-gray.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center my-5 slide-jobs">
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-red.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-red.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-red.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-red.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center my-5 slide-jobs">
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-yellow.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-yellow.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-yellow.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="assets/images/asuna-sao-bg-yellow.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev btn-prev-next" type="button" data-bs-target="#jobs"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon btn-icon-prev-next" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next btn-prev-next" type="button" data-bs-target="#jobs"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon btn-icon-prev-next" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
             </div>
         </div>
     </main>
-    <footer>
-        <div class="bg-dark text-light">
+    <footer class="bg-dark py-3">
+        <div class="text-light">
             <div class="text-center">
                 Marlison
             </div>
@@ -86,7 +273,9 @@
         </div>
     </footer>
 
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
