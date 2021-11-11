@@ -32,7 +32,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#myJobs">Meu trabalhos</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown
@@ -49,12 +49,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled">Disabled</a>
-                    </li>
+                    </li> -->
                 </ul>
-                <form class="d-flex">
+                <!-- <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
@@ -67,6 +67,7 @@
             <div>
                 <h4 id="home">Home</h4>
                 <p></p>
+                <!--
                 <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -90,6 +91,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+                -->
                 <h4 id="aboutMyself" class="mt-5">Sobre mim</h4>
                 <h5>Sou Marlison Soares</h5>
                 <p>Moro em Jardim de Piranhas, RN - Brasil</p>
@@ -106,8 +108,8 @@
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#jobs" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#jobs" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#jobs" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <!-- <button type="button" data-bs-target="#jobs" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#jobs" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
                     </div>
 
                     <div class="carousel-inner">
@@ -134,9 +136,9 @@
                                 </div>
 
                                 <div class="card">
-                                    <img src="assets/images/asuna-sao-bg-gray.jpg" class="card-img-top" alt="...">
+                                    <img src="assets/images/no-image-available.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Projeto de perguntas e respostas, Next Level Week</p>
+                                        <p class="card-text">Projeto de perguntas e respostas, Next Level Week.</p>
 
                                         <div class="d-flex justify-content-center">
                                             <a href="#" class="btn btn-primary" onclick="modalContent('discover')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
@@ -144,19 +146,20 @@
                                     </div>
                                 </div>
                                 <div class="card">
-                                    <img src="assets/images/asuna-sao-bg-gray.jpg" class="card-img-top" alt="...">
+                                    <img src="assets/images/dino-2d.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
+                                        <p class="card-text">Jogo Dino 2D, treinamento.</p>
 
                                         <div class="d-flex justify-content-center">
-                                            <a href="#" class="btn btn-primary" onclick="modalContent('nothing')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
+                                            <a href="#" class="btn btn-primary" onclick="modalContent('dino-2d')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="carousel-item">
+
+                        <!-- <div class="carousel-item">
                             <div class="d-flex justify-content-center my-5 slide-jobs">
                                 <div class="card">
                                     <img src="assets/images/asuna-sao-bg-red.png" class="card-img-top" alt="...">
@@ -200,6 +203,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="carousel-item">
                             <div class="d-flex justify-content-center my-5 slide-jobs">
                                 <div class="card">
@@ -244,7 +248,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <button class="carousel-control-prev btn-prev-next" type="button" data-bs-target="#jobs"
                         data-bs-slide="prev">
@@ -306,28 +310,40 @@
             var modalLink = document.body.querySelector('#modal-link');
             var modalTecno = document.body.querySelector('#modal-tecno');
 
-            if (project == 'pi') { 
+            switch (project) {
+                case 'pi':
+                    title = "Projeto Integrador";
+                    text = "Projeto necessário para a conclusão das matérias técnicas no terceiro ano do ensino técnico em informática do IFRN.";
+                    tecno = "PHP - CSS - JavaScript - Laravel - MySql";
+                    link = "https://github.com/kanashi-br/clear-pi";
+                    break;
 
-                title = "Projeto Integrador";
-                text = "Projeto necessário para a conclusão das matérias técnicas no terceiro ano do ensino técnico em informática do IFRN.";
-                tecno = "PHP - CSS - JavaScript - Laravel - MySql";
-                link = "https://github.com/kanashi-br/clear-pi";
+                case 'spotfly':
+                    title = "Projeto Spotfly";
+                    text = "Projeto de treinamento.";
+                    tecno = "HTML - CSS - JavaScript - Ionic";
+                    link = "https://github.com/kanashi-br/spotfly";
+                    break;
 
-            } else if(project == 'spotfly') {
+                case 'discover':
+                    title = "Projeto Perguntas e Respostas";
+                    text = "Projeto feito durante a imersão da sexta temporada da Next Level Week.";
+                    tecno = "Express - node.js";
+                    link = "https://github.com/kanashi-br/nlw-discover";
+                    break;
 
-                title = "Projeto Spotfly";
-                text = "Projeto de treinamento.";
-                tecno = "HTML - CSS - JavaScript - Ionic";
-                link = "https://github.com/kanashi-br/spotfly";
+                case 'dino-2d':
+                    title = "Dino - CollectFoods 2D";
+                    text = "Jogo simples feito para treinamento."
+                    tecno = "HTML - CSS - JavaScript";
+                    link = "https://github.com/kanashi-br/dino-2d";
 
-            } else if(project == 'discover'){
+                    break;
+                default:
 
-                title = "Projeto Perguntas e Respostas";
-                text = "Sla";
-                tecno = "Sla";
-                link = "https://github.com/kanashi-br/nlw-discover";
+                    break;
+            }
 
-            } 
 
             modalTitle.innerHTML = title;
             modalText.innerHTML = text;
