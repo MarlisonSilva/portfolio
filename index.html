@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#aboutMyself">Sobre mim</a>
@@ -63,10 +63,17 @@
         <div class="circle-1"></div>
         <div class="circle-2"></div>
         <div class="circle-3"></div>
-        <div class="container my-3 py-3 bg-light rounded" style="min-height: 100vh;">
+        <div class="container my-3 py-4 px-4 bg-light rounded" style="min-height: 100vh;">
             <div>
-                <h4 id="home">Home</h4>
-                <p></p>
+                <h4>Sumário</h4>
+                <div class="list-group list-group-flush" id="list-tab">
+                    <a class="list-group-item list-group-item-light" id="list-home-list" data-toggle="list" href="#home" role="tab" aria-controls="home">Início</a>
+                    <a class="list-group-item list-group-item-light" id="list-aboutMyself-list" data-toggle="list" href="#aboutMyself" role="tab" aria-controls="aboutMyself">Sobre mim</a>
+                    <a class="list-group-item list-group-item-light" id="list-myJobs-list" data-toggle="list" href="#myJobs" role="tab" aria-controls="myJobs">Meus trabalhos</a>
+                </div>
+                <h4 id="home" class="mt-5">Início</h4>
+                <p>Esse portfólio tem como objetivo apresentar informações sobre mim, com o intuito de facilitar a contratação e amostra de minhas informações para o contratante.</p>
+                
                 <!--
                 <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -92,45 +99,109 @@
                     </button>
                 </div>
                 -->
+                
+
                 <h4 id="aboutMyself" class="mt-5">Sobre mim</h4>
-                <h5>Sou Marlison Soares</h5>
-                <p>Moro em Jardim de Piranhas, RN - Brasil</p>
-                <h5>Contato:</h5>
-                <p>Email: marlisonsoaresjp@gmail.com</p>
+                <h5>Quem sou</h5>
+                <div class="d-flex">
+                    <div class="me-5">
+                        <p class="mb-2">Olá, sou Marlison Soares! </p>
+                        <p class="mb-2">Tenho 17 anos de idade. </p>
+                        <p class="mb-2">Moro no Rio Grande do Norte - Brasil. </p>
+                        <p class="mb-2">Trabalho, atualmente, como tutor bolsista de estudantes de <strong>Programação Estruturada e Orientada a Objetos</strong>, voltada para a linguagem <strong>Java</strong>. </p>
+                        <p class="mb-2">Área de <i style="cursor: help;" title="PREFERENCIAL, NÃO LIMITADO A ISSO">preferência</i>: desenvolvimento web, com tecnologias -> frameworks Laravel e Bootstrap</p>
+                        <p class="mb-2">Veja o que estou fazendo: <a href="https://github.com/kanashi-br">meu perfil do Github</a>.</p>
+                    </div>
+                    <div class="mx-3">
+                        <img style="border-radius: 50%; height: 250px;" src="https://avatars.githubusercontent.com/u/62121177?v=4" alt="">
+                    </div>
+                </div>
+
+                <h5>Contato</h5>
+                <p class="mb-2">Email: marlisonsoaresjp@gmail.com</p>
                 <p>Telefone: +55 84 99856-4188</p>
 
+                <h5>Estudos</h5>
+                <p>Formação em andamento: Técnico em Informática pelo IFRN.</p>                
+                <h6>Cursos - FIC (Formação Inicial e Continuada)</h6>
+                <ul>
+                    <li>Curso de desenvolvimento web com Laravel</li>
+                </ul>
+                <h6>Cursos - Curso em Vídeo</h6>
+                <ul>
+                    <li>Git e GitHub [20 Horas]</li>                    
+                    <li>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</li>       
+                </ul>
 
-
-
-                <h4 id="myJobs" class="mt-5">Meus trabalhos</h4>
+                
+                <h4 id="myJobs" class="mt-5">Meus trabalhos | projetos</h4>
 
                 <div id="jobs" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#jobs" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
-                        <!-- <button type="button" data-bs-target="#jobs" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#jobs" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+                        <button type="button" data-bs-target="#jobs" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <!-- <button type="button" data-bs-target="#jobs" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
                     </div>
 
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="d-flex justify-content-center my-5 slide-jobs">
                                 <div class="card">
-                                    <img src="assets/images/logo-icon-clear.png" class="card-img-top" alt="...">
+                                    <img src="assets/images/logo-icon-spitech.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Projeto integrador, IFRN.</p>
+                                        <p class="card-text">Projeto Spitech | Curso de Laravel.</p>
                                         <div class="d-flex justify-content-center">
-                                            <a href="#" class="btn btn-primary" onclick="modalContent('pi')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
+                                            <a href="#" class="btn btn-primary" onclick="modalContent('spitech')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div class="card">
-                                    <img src="assets/images/logo-icon-spotfly.png" class="card-img-top" alt="...">
+                                    <img src="assets/images/no-image-available.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Projeto Spotfly, treinamento.</p>
+                                        <p class="card-text">Site Tarefas | Curso de Laravel.</p>
 
                                         <div class="d-flex justify-content-center">
-                                            <a href="#" class="btn btn-primary" onclick="modalContent('spotfly')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
+                                            <a href="#" class="btn btn-primary" onclick="modalContent('tarefas')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/dino-2d.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Jogo Dino 2D | Treinamento.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary" onclick="modalContent('dino-2d')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img src="assets/images/logo-icon-ifsociedade.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">IFSociedade: Rede Social | Projeto Pessoal.</p>
+
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary" onclick="modalContent('discover')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center my-5 slide-jobs">
+                                <div class="card">
+                                    <img src="assets/images/no-image-available.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Tutoria | IFRN.</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-primary" onclick="modalContent('tutoria')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
                                         </div>
                                     </div>
                                 </div>
@@ -138,72 +209,38 @@
                                 <div class="card">
                                     <img src="assets/images/no-image-available.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Projeto de perguntas e respostas, Next Level Week.</p>
+                                        <p class="card-text">Projeto de perguntas e respostas | Next Level Week.</p>
 
                                         <div class="d-flex justify-content-center">
                                             <a href="#" class="btn btn-primary" onclick="modalContent('discover')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card">
-                                    <img src="assets/images/dino-2d.png" class="card-img-top" alt="...">
+                                    <img src="assets/images/logo-icon-spotfly.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Jogo Dino 2D, treinamento.</p>
+                                        <p class="card-text">Projeto Spotfly | Treinamento. [Inacabado]</p>
 
                                         <div class="d-flex justify-content-center">
-                                            <a href="#" class="btn btn-primary" onclick="modalContent('dino-2d')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
+                                            <a href="#" class="btn btn-primary" onclick="modalContent('spotfly')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                        </div>
-
-                        <!-- <div class="carousel-item">
-                            <div class="d-flex justify-content-center my-5 slide-jobs">
+                                
                                 <div class="card">
-                                    <img src="assets/images/asuna-sao-bg-red.png" class="card-img-top" alt="...">
+                                    <img src="assets/images/logo-icon-clear.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
-
+                                        <p class="card-text">Projeto integrador | IFRN.</p>
                                         <div class="d-flex justify-content-center">
-                                            <a href="#" class="btn btn-primary" onclick="modalContent('nothing')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
+                                            <a href="#" class="btn btn-primary" onclick="modalContent('pi')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <img src="assets/images/asuna-sao-bg-red.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
 
-                                        <div class="d-flex justify-content-center">
-                                            <a href="#" class="btn btn-primary" onclick="modalContent('nothing')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="assets/images/asuna-sao-bg-red.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
-
-                                        <div class="d-flex justify-content-center">
-                                            <a href="#" class="btn btn-primary" onclick="modalContent('nothing')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="assets/images/asuna-sao-bg-red.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p class="card-text">Projeto bla bla bla, bla bla bla.</p>
-
-                                        <div class="d-flex justify-content-center">
-                                            <a href="#" class="btn btn-primary" onclick="modalContent('nothing')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
-
+                        <!-- 
                         <div class="carousel-item">
                             <div class="d-flex justify-content-center my-5 slide-jobs">
                                 <div class="card">
@@ -247,8 +284,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div> -->
+                        </div> -->
+                    </div> 
 
                     <button class="carousel-control-prev btn-prev-next" type="button" data-bs-target="#jobs"
                         data-bs-slide="prev">
@@ -279,9 +316,13 @@
                         <p class="badge bg-primary" id="modal-tecno" style="word-spacing: .5rem;"></p>
                     </div>
 
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <a class="btn btn-success" id="modal-link" href="#" target="_blank"></a>
+                    <div class="modal-footer justify-content-between">
+                        <div>
+                            <a class="btn btn-primary" id="modal-link" href="#" target="_blank">Repositório</a>
+                            <a class="btn btn-primary" id="modal-demo" href="#" target="_blank">Demo</a>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        
                     </div>
                 </div>
             </div>
@@ -290,7 +331,7 @@
     <footer class="bg-dark py-3">
         <div class="text-light">
             <div class="text-center">
-                Marlison
+                Feito por Marlison
             </div>
 
         </div>
@@ -304,25 +345,53 @@
             let text = "Sem conteúdo";
             let tecno = "Nenhuma";
             let link = "#";
+            let demo = "false";
 
             var modalTitle = document.body.querySelector('#modal-title');
             var modalText = document.body.querySelector('#modal-text');
             var modalLink = document.body.querySelector('#modal-link');
+            var modalDemo = document.body.querySelector('#modal-demo');
             var modalTecno = document.body.querySelector('#modal-tecno');
 
             switch (project) {
-                case 'pi':
-                    title = "Projeto Integrador";
-                    text = "Projeto necessário para a conclusão das matérias técnicas no terceiro ano do ensino técnico em informática do IFRN.";
-                    tecno = "PHP - CSS - JavaScript - Laravel - MySql";
-                    link = "https://github.com/kanashi-br/clear-pi";
+                case 'spitech':
+                    title = "Projeto Spitech";
+                    text = "Plataforma de posts e links para cursos no mundo da informática.";
+                    tecno = "PHP - Laravel - Bootstrap - MySql";
+                    link = "https://github.com/nataliaalvs/spitech";
+                    demo = "https://spitech.herokuapp.com";
+                    break;
+                
+                case 'tarefas':
+                    title = "Tarefas";
+                    text = "Aplicação para gerenciamento de tarefas."
+                    tecno = "PHP - Laravel - Bootstrap - MySql";
+                    link = "https://github.com/kanashi-br/tarefas";
+                    demo = "https://your-tasks.herokuapp.com";
                     break;
 
-                case 'spotfly':
-                    title = "Projeto Spotfly";
-                    text = "Projeto de treinamento.";
-                    tecno = "HTML - CSS - JavaScript - Ionic";
-                    link = "https://github.com/kanashi-br/spotfly";
+                case 'dino-2d':
+                    title = "Dino - CollectFoods 2D";
+                    text = "Jogo simples feito para treinamento."
+                    tecno = "PHP - CSS - JavaScript - Laravel";
+                    link = "https://github.com/kanashi-br/dino-2d";
+                    demo = "https://kanashi-br.github.io/dino-2d/";
+                    break;
+
+                case 'ifsociedade':
+                    title = "IFSociedade - Rede Social";
+                    text = "Em andamento...";
+                    tecno = "Mais em breve...";
+                    link = "#";
+                    demo = "https://ifsociedade.herokuapp.com";                    
+                    break;
+
+                case 'tutoria':
+                    title = "Arquivos da tutoria";
+                    text = "Arquivos que foram criados durante encontros de tutoria com os alunos";
+                    tecno = "Java";
+                    link = "https://github.com/tutoriainformaticacaico/poo-2021";
+                    demo = "false";
                     break;
 
                 case 'discover':
@@ -330,17 +399,26 @@
                     text = "Projeto feito durante a imersão da sexta temporada da Next Level Week.";
                     tecno = "Express - node.js";
                     link = "https://github.com/kanashi-br/nlw-discover";
+                    demo = "false";
                     break;
 
-                case 'dino-2d':
-                    title = "Dino - CollectFoods 2D";
-                    text = "Jogo simples feito para treinamento."
-                    tecno = "HTML - CSS - JavaScript";
-                    link = "https://github.com/kanashi-br/dino-2d";
-
+                case 'spotfly':
+                    title = "Projeto Spotfly";
+                    text = "Projeto de treinamento.";
+                    tecno = "HTML - CSS - JavaScript - Ionic";
+                    link = "https://github.com/kanashi-br/spotfly";
+                    demo = "https://kanashi-br.github.io/spotfly";
                     break;
+
+                case 'pi':
+                    title = "Projeto Integrador";
+                    text = "Projeto necessário para a conclusão das matérias técnicas no terceiro ano do ensino técnico em informática do IFRN.";
+                    tecno = "PHP - CSS - JavaScript - Laravel - MySql";
+                    link = "https://github.com/kanashi-br/clear-pi";
+                    demo = "false";
+                    break;
+
                 default:
-
                     break;
             }
 
@@ -348,8 +426,15 @@
             modalTitle.innerHTML = title;
             modalText.innerHTML = text;
             modalTecno.innerHTML = tecno;
-            modalLink.innerHTML = title;
             modalLink.href = link;
+            if (demo == "false") {
+                modalDemo.text = "Sem demo";
+                modalDemo.removeAttribute("href");
+                modalDemo.classList.add("opacity-50");
+            } else {
+                modalDemo.classList.remove("opacity-50");
+                modalDemo.href = demo;
+            }
 
         }
     </script>
