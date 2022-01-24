@@ -185,7 +185,7 @@
                                         <p class="card-text">IFSociedade: Rede Social | Projeto Pessoal.</p>
 
                                         <div class="d-flex justify-content-center">
-                                            <a href="#" class="btn btn-primary" onclick="modalContent('discover')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
+                                            <a href="#" class="btn btn-primary" onclick="modalContent('ifsociedade')" data-bs-toggle="modal" data-bs-target="#showProject">Ver projeto</a>
                                         </div>
                                     </div>
                                 </div>
@@ -417,9 +417,6 @@
                     link = "https://github.com/kanashi-br/clear-pi";
                     demo = "false";
                     break;
-
-                default:
-                    break;
             }
 
 
@@ -432,6 +429,7 @@
                 modalDemo.removeAttribute("href");
                 modalDemo.classList.add("opacity-50");
             } else {
+                modalDemo.text = "Demo";
                 modalDemo.classList.remove("opacity-50");
                 modalDemo.href = demo;
             }
